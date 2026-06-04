@@ -1,1 +1,393 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet"><style>*{margin:0;padding:0;box-sizing:border-box}:root{--cy:#06b6d4;--pu:#8b5cf6;--gr:#22c55e;--bg:#0a0e1a;--ca:#111827;--c2:#0f172a;--bd:#1f2937;--tx:#e2e8f0;--mt:#94a3b8}body{background:var(--bg);color:var(--tx);font-family:'Inter',system-ui,sans-serif;min-height:100vh}a{color:var(--cy);text-decoration:none}a:hover{text-decoration:underline}.tb{background:rgba(10,14,26,.96);border-bottom:1px solid var(--bd);padding:13px 22px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;backdrop-filter:blur(12px)}.tl{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.bk{display:inline-flex;align-items:center;gap:5px;color:var(--mt);font-size:.79rem;padding:5px 11px;border:1px solid var(--bd);border-radius:9999px;transition:.2s}.bk:hover{border-color:var(--cy);color:var(--cy);text-decoration:none}.pt{font-weight:700;font-size:.9rem}.badge{font-size:.67rem;padding:2px 9px;border-radius:9999px;border:1px solid}.bc{background:rgba(6,182,212,.1);border-color:rgba(6,182,212,.3);color:var(--cy)}.bp{background:rgba(139,92,246,.1);border-color:rgba(139,92,246,.3);color:#a78bfa}.gh{color:var(--mt);font-size:.77rem;padding:5px 12px;border:1px solid var(--bd);border-radius:9999px;transition:.2s;display:inline-flex;align-items:center;gap:5px}.gh:hover{color:var(--tx);text-decoration:none}.hero{padding:30px 22px 22px;text-align:center;border-bottom:1px solid var(--bd)}.hc{background:radial-gradient(ellipse at 50% 0%,rgba(6,182,212,.1) 0%,transparent 60%)}.hp{background:radial-gradient(ellipse at 50% 0%,rgba(139,92,246,.1) 0%,transparent 60%)}h1{font-size:clamp(1.35rem,3vw,1.9rem);font-weight:800;letter-spacing:-.4px;background:linear-gradient(135deg,#fff 0%,var(--cy) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}h1.p{background:linear-gradient(135deg,#fff 0%,#a78bfa 100%);-webkit-background-clip:text;background-clip:text}.sub{color:var(--mt);font-size:.85rem;margin-top:6px;max-width:600px;margin-left:auto;margin-right:auto}.mr{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:16px}.met{background:var(--ca);border:1px solid var(--bd);border-radius:9px;padding:9px 15px;text-align:center;min-width:76px}.mv{font-size:1.15rem;font-weight:800;color:var(--cy)}.mv.p{color:#a78bfa}.ml{font-size:.61rem;color:var(--mt)}.wrap{max-width:840px;margin:0 auto;padding:26px 16px}.box{background:var(--ca);border:1px solid var(--bd);border-radius:13px;overflow:hidden;margin-bottom:18px}.bh{padding:11px 17px;border-bottom:1px solid var(--bd);display:flex;align-items:center;gap:7px;background:var(--c2)}.dot{width:8px;height:8px;border-radius:50%}.blb{font-size:.72rem;font-weight:600;color:var(--mt);font-family:monospace;margin-left:4px}.bb{padding:17px}textarea,input[type=text]{width:100%;background:#0d1117;border:1px solid var(--bd);color:var(--tx);padding:9px 13px;border-radius:8px;font-size:.86rem;font-family:inherit;resize:vertical;outline:none;transition:.2s}textarea:focus,input:focus{border-color:var(--cy)}.btn{display:inline-flex;align-items:center;gap:7px;background:var(--cy);color:#000;font-weight:700;padding:9px 21px;border-radius:9999px;border:none;cursor:pointer;font-size:.84rem;margin-top:9px;transition:.2s}.btn:hover{background:#22d3ee}.btn:disabled{opacity:.5;cursor:not-allowed}.btn.p{background:var(--pu);color:#fff}.btn.p:hover{background:#7c3aed}.exs{display:flex;flex-wrap:wrap;gap:7px;margin-top:9px}.chip{background:#1e293b;border:1px solid var(--bd);color:var(--mt);font-size:.72rem;padding:4px 11px;border-radius:9999px;cursor:pointer;transition:.2s}.chip:hover{border-color:var(--cy);color:var(--cy)}.out{background:#0d1117;border:1px solid var(--bd);border-radius:9px;padding:16px;margin-top:13px;font-family:'Fira Code',monospace;font-size:.79rem;line-height:1.8;white-space:pre-wrap;word-break:break-word;display:none;animation:fi .35s ease}.out.show{display:block}@keyframes fi{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}.ld{display:none;align-items:center;gap:9px;color:var(--mt);font-size:.82rem;margin-top:11px}.ld.show{display:flex}.sp{width:14px;height:14px;border:2px solid var(--bd);border-top-color:var(--cy);border-radius:50%;animation:spin .7s linear infinite}.sp.p{border-top-color:var(--pu)}@keyframes spin{to{transform:rotate(360deg)}}.g2{display:grid;grid-template-columns:1fr 1fr;gap:11px}@media(max-width:560px){.g2{grid-template-columns:1fr}}.ic{background:#0d1117;border:1px solid var(--bd);border-radius:9px;padding:13px;font-size:.78rem;line-height:1.7;color:var(--mt)}.ic strong{color:var(--tx)}.sl2{font-size:.67rem;text-transform:uppercase;letter-spacing:.07em;color:var(--mt);margin-bottom:7px;font-weight:600}.doc-sel{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:13px}.doc-btn{padding:6px 13px;font-size:.78rem;border:1px solid var(--bd);border-radius:8px;cursor:pointer;background:var(--c2);color:var(--mt);transition:.2s}.doc-btn.act{border-color:var(--cy);color:var(--cy);background:rgba(6,182,212,.08)}.src-doc{background:#0d1117;border:1px solid var(--bd);border-radius:8px;padding:11px;margin-bottom:9px;font-size:.8rem;line-height:1.65}.src-label{font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--cy);margin-bottom:5px}.src-text{color:var(--mt);font-style:italic}.chat{display:flex;flex-direction:column;gap:0;min-height:180px;max-height:360px;overflow-y:auto;margin-bottom:12px}.cmsg{padding:9px 13px;border-radius:9px;font-size:.84rem;margin-bottom:8px;line-height:1.6;max-width:90%}.cu{background:rgba(6,182,212,.12);border:1px solid rgba(6,182,212,.2);align-self:flex-end;margin-left:auto}.cb{background:var(--c2);border:1px solid var(--bd)}.cme{font-size:.66rem;color:var(--mt);margin-bottom:3px}.ci{display:flex;gap:8px;align-items:center}.ci input{flex:1;margin:0}.paper-card{background:#0d1117;border:1px solid var(--bd);border-radius:9px;padding:14px;margin-bottom:10px}.paper-title{font-weight:700;font-size:.88rem;color:var(--tx);margin-bottom:4px}.paper-meta{font-size:.72rem;color:var(--mt);margin-bottom:6px}.paper-snip{font-size:.79rem;color:var(--mt);line-height:1.6;border-left:2px solid var(--cy);padding-left:8px;margin-bottom:6px}.paper-ai{font-size:.79rem;color:var(--tx);line-height:1.55;margin-bottom:6px}.ptags{display:flex;gap:5px;flex-wrap:wrap}.ptag{font-size:.66rem;padding:2px 8px;border-radius:9999px;background:rgba(6,182,212,.1);border:1px solid rgba(6,182,212,.25);color:var(--cy)}.psim{font-size:.72rem;font-weight:700;color:var(--gr);margin-left:8px}.feat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(175px,1fr));gap:10px;margin-bottom:14px}.fi label{font-size:.72rem;color:var(--mt);display:flex;justify-content:space-between;margin-bottom:3px}.fi input[type=range]{width:100%;accent-color:var(--cy)}select{width:100%;background:#0d1117;border:1px solid var(--bd);color:var(--tx);padding:9px 13px;border-radius:8px;font-size:.86rem;font-family:inherit;outline:none;cursor:pointer}footer{border-top:1px solid var(--bd);padding:22px;text-align:center;color:var(--mt);font-size:.77rem}footer a{color:var(--pu)}</style></head><body><script>function show(id,txt){var el=document.getElementById(id);el.textContent=txt;el.className="out show";}function hide(id){var el=document.getElementById(id);if(el)el.className="out";}function wait(ms){return new Promise(function(r){setTimeout(r,ms);});}function ld(id,on){var el=document.getElementById(id);if(el)el.className=on?"ld show":"ld";}function rnd(a,b){return Math.floor(a+Math.random()*(b-a));}function bar(v,n){var s="";n=n||12;for(var i=0;i<Math.min(Math.round(Math.abs(v)*n),n);i++)s+="#";return s;}</script><div class="tb"><div class="tl"><a class="bk" href="https://ankitthakur104.github.io">&larr; Portfolio</a><span class="pt">Research Paper Semantic Search</span><span class="badge bc">Live Demo</span></div><a class="gh" href="https://github.com/ankitthakur104/research-paper-semantic-search" target="_blank">&#9733; Code</a></div><div class="hero hc"><h1>Semantic Research Search</h1><p class="sub">Type a research topic &mdash; the system embeds your query and retrieves the most semantically similar papers from a 50K-paper index with AI-generated relevance summaries.</p><div class="mr"><div class="met"><div class="mv">50K+</div><div class="ml">Papers Indexed</div></div><div class="met"><div class="mv">92%</div><div class="ml">NDCG@10</div></div><div class="met"><div class="mv">SPECTER</div><div class="ml">Embedding</div></div><div class="met"><div class="mv">ArXiv</div><div class="ml">+ S2</div></div></div></div><div class="wrap"><div class="box"><div class="bh"><div class="dot" style="background:#ff5555"></div><div class="dot" style="background:#ffb86c"></div><div class="dot" style="background:#50fa7b"></div><span class="blb">SPECTER2 embeddings · Pinecone · GPT-4o summaries · ArXiv + Semantic Scholar</span></div><div class="bb"><div class="sl2">Search Query</div><input type="text" id="si" placeholder="e.g. attention mechanism in transformer models"><div class="exs" id="sexs"></div><button class="btn" id="sbtn" onclick="runSearch()">&#9654; Semantic Search</button><div class="ld" id="sld"><div class="sp"></div><span>SPECTER2 encoding &rarr; Pinecone search &rarr; ranking...</span></div><div id="sout" style="margin-top:14px"></div></div></div><div class="g2"><div class="ic"><strong>Retrieval Pipeline</strong><br><br>SPECTER2 domain-specific embeddings (trained on citation graphs) outperform generic models for scientific text. Pinecone stores 50K paper embeddings with metadata filters for year and venue.</div><div class="ic"><strong>AI Summaries</strong><br><br>GPT-4o generates a 2-3 sentence research synthesis per paper, highlighting relevance to the query, method used, dataset, and key result extracted.</div></div></div><script>var PAPERS={"transformer":[{"t":"Attention Is All You Need","a":"Vaswani et al.","y":2017,"v":"NeurIPS","c":"90K+","sim":0.97,"tags":["transformers","attention","NLP"],"snip":"Introduces the Transformer architecture relying entirely on attention. Scaled dot-product + multi-head attention replace RNNs, achieving SOTA on WMT translation.","ai":"Foundational transformer paper establishing multi-head self-attention, positional encoding, and the encoder-decoder architecture underlying GPT, BERT, and all modern LLMs."},{"t":"BERT: Pre-training of Deep Bidirectional Transformers","a":"Devlin et al.","y":2019,"v":"NAACL","c":"42K+","sim":0.91,"tags":["BERT","bidirectional","NLP"],"snip":"BERT uses masked language modeling and next-sentence prediction to pre-train deep bidirectional representations, achieving SOTA on 11 NLP tasks.","ai":"Key for bidirectional attention understanding. BERT's masked attention contrasts with GPT's causal attention — critical context for attention mechanism design."},{"t":"Flash Attention: Fast Memory-Efficient Attention","a":"Dao et al.","y":2022,"v":"NeurIPS","c":"3.2K+","sim":0.87,"tags":["efficiency","CUDA","long context"],"snip":"IO-aware exact attention using tiling to reduce memory reads/writes. 2-4x faster than standard attention, enables training on much longer sequences.","ai":"Solves attention's O(n^2) memory bottleneck via hardware-aware computation. Enables 100K+ context windows — critical engineering advance for modern LLMs."}],"rlhf":[{"t":"Training Language Models to Follow Instructions with Human Feedback","a":"Ouyang et al. (OpenAI)","y":2022,"v":"NeurIPS","c":"5.8K+","sim":0.96,"tags":["RLHF","alignment","GPT"],"snip":"InstructGPT: fine-tunes GPT-3 with RLHF via human preference ranking, reward model training, and PPO fine-tuning.","ai":"The seminal RLHF paper. 1.3B InstructGPT preferred over 175B GPT-3 by human raters 80% of time — establishes the RLHF pipeline now standard across major LLMs."},{"t":"Direct Preference Optimization","a":"Rafailov et al.","y":2023,"v":"NeurIPS","c":"2.1K+","sim":0.91,"tags":["DPO","alignment"],"snip":"DPO eliminates separate reward model training — reformulates RLHF as classification on preference pairs. Simpler, more stable, competitive with PPO.","ai":"Key RLHF alternative. Simplifies alignment training significantly, now widely adopted in open-source fine-tuning (LLaMA, Mistral, Qwen)."},{"t":"Constitutional AI: Harmlessness from AI Feedback","a":"Bai et al. (Anthropic)","y":2022,"v":"ArXiv","c":"1.4K+","sim":0.85,"tags":["CAI","RLAIF","safety"],"snip":"Uses a constitution of principles for AI self-critique and revision. RLAIF replaces human labelers for harmlessness, enabling scalable feedback.","ai":"Extends RLHF with AI-generated feedback guided by explicit principles — relevant for understanding alignment at scale beyond human labeling capacity."}],"diffusion":[{"t":"Denoising Diffusion Probabilistic Models","a":"Ho et al.","y":2020,"v":"NeurIPS","c":"8.2K+","sim":0.97,"tags":["DDPM","generative"],"snip":"Establishes DDPM: learns to reverse Gaussian noise diffusion. Achieves FID 3.17 on CIFAR-10, outperforming GANs on image quality.","ai":"Foundational diffusion model paper. Establishes forward/reverse Markov chain formulation, simplified noise-prediction objective, and connection to score matching."},{"t":"Latent Diffusion Models","a":"Rombach et al.","y":2022,"v":"CVPR","c":"7.1K+","sim":0.93,"tags":["Stable Diffusion","LDM","text-to-image"],"snip":"Operates diffusion in compressed latent space (VAE), reducing compute by 10x. Basis of Stable Diffusion — enables 512x512 on consumer GPUs.","ai":"Critical efficiency breakthrough enabling text-to-image at scale. Directly relevant to Stable Diffusion, DALL-E 3, and Midjourney architectures."},{"t":"DALL-E 2: Hierarchical Text-Conditional Image Generation","a":"Ramesh et al. (OpenAI)","y":2022,"v":"ArXiv","c":"3.5K+","sim":0.88,"tags":["DALL-E","CLIP","text-to-image"],"snip":"CLIP text embeddings guide a diffusion prior and decoder. Hierarchical: prior maps text to image embedding, decoder maps to image.","ai":"Shows CLIP embeddings can bridge text-image modalities for generation. The two-stage hierarchical approach is directly relevant to text-conditioned diffusion."}],"rag":[{"t":"Retrieval-Augmented Generation for Knowledge-Intensive NLP","a":"Lewis et al. (Meta AI)","y":2020,"v":"NeurIPS","c":"4.2K+","sim":0.97,"tags":["RAG","retrieval","QA"],"snip":"RAG combines parametric memory (LLM) with non-parametric memory (dense retrieval). DPR retriever + BART generator achieves SOTA on NQ, TriviaQA, MS-MARCO.","ai":"Original RAG paper. Establishes retrieve-then-generate paradigm, DPR dual encoder retrieval, and fusion-in-decoder generation — foundational to all RAG-based systems."},{"t":"REALM: Retrieval-Enhanced Language Model Pre-Training","a":"Guu et al. (Google)","y":2020,"v":"ICML","c":"1.8K+","sim":0.89,"tags":["REALM","pre-training"],"snip":"Incorporates retrieval into pre-training — learns to retrieve relevant Wikipedia passages during masked LM training. End-to-end trained.","ai":"Extends retrieval augmentation to pre-training itself. Key insight: joint training of retriever and LM improves relevance of retrieved context downstream."},{"t":"Self-RAG: Learning to Retrieve, Generate, and Critique","a":"Asai et al.","y":2023,"v":"ICLR","c":"920+","sim":0.85,"tags":["Self-RAG","adaptive","critique"],"snip":"LLM learns to decide when to retrieve (reflection tokens), retrieve selectively, and critique its own outputs. Outperforms ChatGPT on 4/6 benchmarks.","ai":"Advances RAG with adaptive retrieval (only when needed) and self-critique tokens. Directly relevant for building efficient RAG systems without unnecessary overhead."}],"default":[{"t":"Scaling Laws for Neural Language Models","a":"Kaplan et al. (OpenAI)","y":2020,"v":"ArXiv","c":"5.1K+","sim":0.78,"tags":["scaling","compute","LLMs"],"snip":"Power-law relationships between performance and compute, data, and parameters. Foundational for optimal training configuration decisions.","ai":"Empirical basis for compute allocation between model size and training tokens — influences decisions behind GPT-4, Gemini, and LLaMA series."},{"t":"Language Models are Few-Shot Learners (GPT-3)","a":"Brown et al. (OpenAI)","y":2020,"v":"NeurIPS","c":"28K+","sim":0.74,"tags":["GPT-3","few-shot","ICL"],"snip":"175B autoregressive LM demonstrates emergent few-shot learning from in-context examples without gradient updates. Establishes in-context learning.","ai":"Establishes in-context learning as emergent capability of large LLMs. The prompt-based inference paradigm underlies modern LLM deployment."},{"t":"Chain-of-Thought Prompting Elicits Reasoning in LLMs","a":"Wei et al. (Google)","y":2022,"v":"NeurIPS","c":"5.9K+","sim":0.71,"tags":["chain-of-thought","reasoning"],"snip":"Intermediate reasoning steps in prompts significantly improve LLM performance on arithmetic, commonsense, and symbolic reasoning at 100B+ scale.","ai":"Foundational for LLM reasoning. CoT is now standard for complex tasks and basis for reasoning models like o1 and DeepSeek-R1."}]};var EXQS=["Attention mechanism in transformer models","RLHF and reinforcement learning for LLM alignment","Diffusion models for image generation","RAG retrieval augmented generation for QA"];function pick(q){var ql=q.toLowerCase();if(/(attention|transformer|bert|flash)/.test(ql))return PAPERS.transformer;if(/(rlhf|reinforce|alignment|dpo|instruct)/.test(ql))return PAPERS.rlhf;if(/(diffusion|stable diffusion|dall|image gen|text.to.image)/.test(ql))return PAPERS.diffusion;if(/(rag|retrieval|augmented|knowledge base)/.test(ql))return PAPERS.rag;return PAPERS["default"];}async function runSearch(){  var q=document.getElementById("si").value.trim();if(!q)return;  var btn=document.getElementById("sbtn");btn.disabled=true;ld("sld",true);document.getElementById("sout").innerHTML="";  await wait(1200+rnd(0,600));  var papers=pick(q),lat=rnd(280,430),el=document.getElementById("sout");  ld("sld",false);  var hdr=document.createElement("div");hdr.style.cssText="font-size:.72rem;color:var(--mt);margin-bottom:11px;padding-bottom:8px;border-bottom:1px solid var(--bd)";hdr.textContent="Found "+papers.length+" papers for: "+q.slice(0,50)+(q.length>50?"...":"")+"  |  SPECTER2 + Pinecone  |  latency: "+lat+"ms";el.appendChild(hdr);  papers.forEach(function(p){    var sim=(p.sim-Math.random()*.03).toFixed(3);    var card=document.createElement("div");card.className="paper-card";    var title=document.createElement("div");title.className="paper-title";title.textContent=p.t;    var simBadge=document.createElement("span");simBadge.className="psim";simBadge.textContent="sim="+sim;title.appendChild(simBadge);    var meta=document.createElement("div");meta.className="paper-meta";meta.textContent=p.a+" · "+p.v+" "+p.y+" · "+p.c+" citations";    var snip=document.createElement("div");snip.className="paper-snip";snip.textContent=p.snip;    var ai=document.createElement("div");ai.className="paper-ai";var aiLabel=document.createElement("span");aiLabel.style.cssText="color:var(--cy);font-weight:600";aiLabel.textContent="AI Insight: ";ai.appendChild(aiLabel);ai.appendChild(document.createTextNode(p.ai));    var tags=document.createElement("div");tags.className="ptags";p.tags.forEach(function(t){var tg=document.createElement("span");tg.className="ptag";tg.textContent=t;tags.appendChild(tg);});    card.appendChild(title);card.appendChild(meta);card.appendChild(snip);card.appendChild(ai);card.appendChild(tags);el.appendChild(card);  });  btn.disabled=false;}var ec=document.getElementById("sexs");EXQS.forEach(function(q){var c=document.createElement("span");c.className="chip";c.textContent=q;c.onclick=function(){document.getElementById("si").value=q;};ec.appendChild(c);});document.getElementById("si").addEventListener("keydown",function(e){if(e.key==="Enter")runSearch();});</script><footer><p>Built by <a href="https://ankitthakur104.github.io">Ankit Kumar</a> &mdash; AI/GenAI Engineer &nbsp;&middot;&nbsp; <a href="https://github.com/ankitthakur104">GitHub</a> &nbsp;&middot;&nbsp; <a href="https://ankitthakur104.github.io#projects">All Projects</a></p></footer></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research Paper Semantic Search – Live Demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --cyan: #06b6d4;
+      --purple: #8b5cf6;
+      --green: #22c55e;
+      --bg: #0a0e1a;
+      --card-bg: #111827;
+      --card-dark: #0f172a;
+      --border: #1f2937;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+    }
+
+    body { background: var(--bg); color: var(--text); font-family: 'Inter', system-ui, sans-serif; min-height: 100vh; }
+    a { color: var(--cyan); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .navbar { background: rgba(10,14,26,0.96); border-bottom: 1px solid var(--border); padding: 13px 22px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; backdrop-filter: blur(12px); }
+    .nav-left { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+    .back-btn { display: inline-flex; align-items: center; gap: 5px; color: var(--muted); font-size: 0.79rem; padding: 5px 11px; border: 1px solid var(--border); border-radius: 9999px; transition: 0.2s; }
+    .back-btn:hover { border-color: var(--cyan); color: var(--cyan); text-decoration: none; }
+    .page-title { font-weight: 700; font-size: 0.9rem; }
+    .badge { font-size: 0.67rem; padding: 2px 9px; border-radius: 9999px; border: 1px solid; }
+    .badge-cyan { background: rgba(6,182,212,0.1); border-color: rgba(6,182,212,0.3); color: var(--cyan); }
+    .github-link { color: var(--muted); font-size: 0.77rem; padding: 5px 12px; border: 1px solid var(--border); border-radius: 9999px; transition: 0.2s; display: inline-flex; align-items: center; gap: 5px; }
+    .github-link:hover { color: var(--text); text-decoration: none; }
+
+    .hero { padding: 30px 22px 22px; text-align: center; border-bottom: 1px solid var(--border); background: radial-gradient(ellipse at 50% 0%, rgba(6,182,212,0.1) 0%, transparent 60%); }
+    .hero h1 { font-size: clamp(1.35rem, 3vw, 1.9rem); font-weight: 800; letter-spacing: -0.4px; background: linear-gradient(135deg, #fff 0%, var(--cyan) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .hero-sub { color: var(--muted); font-size: 0.85rem; margin-top: 6px; max-width: 600px; margin-left: auto; margin-right: auto; }
+    .metrics-row { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-top: 16px; }
+    .metric-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 9px; padding: 9px 15px; text-align: center; min-width: 76px; }
+    .metric-value { font-size: 1.15rem; font-weight: 800; color: var(--cyan); }
+    .metric-label { font-size: 0.61rem; color: var(--muted); }
+
+    .page-content { max-width: 840px; margin: 0 auto; padding: 26px 16px; }
+    .demo-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 13px; overflow: hidden; margin-bottom: 18px; }
+    .card-header { padding: 11px 17px; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 7px; background: var(--card-dark); }
+    .traffic-dot { width: 8px; height: 8px; border-radius: 50%; }
+    .card-label { font-size: 0.72rem; font-weight: 600; color: var(--muted); font-family: monospace; margin-left: 4px; }
+    .card-body { padding: 17px; }
+    .section-label { font-size: 0.67rem; text-transform: uppercase; letter-spacing: 0.07em; color: var(--muted); margin-bottom: 7px; font-weight: 600; }
+
+    .search-row { display: flex; gap: 8px; align-items: center; }
+    .search-row input { flex: 1; background: #0d1117; border: 1px solid var(--border); color: var(--text); padding: 9px 13px; border-radius: 8px; font-size: 0.86rem; font-family: inherit; outline: none; transition: 0.2s; }
+    .search-row input:focus { border-color: var(--cyan); }
+    .search-btn { background: var(--cyan); color: #000; font-weight: 700; padding: 9px 18px; border-radius: 9999px; border: none; cursor: pointer; font-size: 0.84rem; transition: 0.2s; white-space: nowrap; }
+    .search-btn:hover { background: #22d3ee; }
+    .search-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+    .example-chips { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 9px; margin-bottom: 14px; }
+    .chip { background: #1e293b; border: 1px solid var(--border); color: var(--muted); font-size: 0.72rem; padding: 4px 11px; border-radius: 9999px; cursor: pointer; transition: 0.2s; }
+    .chip:hover { border-color: var(--cyan); color: var(--cyan); }
+
+    .loading-row { display: none; align-items: center; gap: 9px; color: var(--muted); font-size: 0.82rem; margin-top: 11px; }
+    .loading-row.active { display: flex; }
+    .spinner { width: 14px; height: 14px; border: 2px solid var(--border); border-top-color: var(--cyan); border-radius: 50%; animation: spin 0.7s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* paper result cards */
+    .results-area { margin-top: 14px; display: none; }
+    .results-area.visible { display: block; }
+
+    .paper-card { background: #0d1117; border: 1px solid var(--border); border-radius: 9px; padding: 14px; margin-bottom: 10px; animation: fade-in 0.3s ease; }
+    @keyframes fade-in { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+
+    .paper-title { font-weight: 700; font-size: 0.88rem; color: var(--text); margin-bottom: 4px; }
+    .paper-meta { font-size: 0.72rem; color: var(--muted); margin-bottom: 6px; }
+    .paper-snippet { font-size: 0.79rem; color: var(--muted); line-height: 1.6; border-left: 2px solid var(--cyan); padding-left: 8px; margin-bottom: 6px; font-style: italic; }
+    .paper-summary { font-size: 0.79rem; color: var(--text); line-height: 1.55; margin-bottom: 6px; }
+    .paper-tags { display: flex; gap: 5px; flex-wrap: wrap; align-items: center; }
+    .paper-tag { font-size: 0.66rem; padding: 2px 8px; border-radius: 9999px; background: rgba(6,182,212,0.1); border: 1px solid rgba(6,182,212,0.25); color: var(--cyan); }
+    .similarity-score { font-size: 0.72rem; font-weight: 700; color: var(--green); margin-left: auto; }
+
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 11px; }
+    @media (max-width: 560px) { .two-col { grid-template-columns: 1fr; } }
+    .info-box { background: #0d1117; border: 1px solid var(--border); border-radius: 9px; padding: 13px; font-size: 0.78rem; line-height: 1.7; color: var(--muted); }
+    .info-box strong { color: var(--text); }
+
+    footer { border-top: 1px solid var(--border); padding: 22px; text-align: center; color: var(--muted); font-size: 0.77rem; }
+    footer a { color: var(--purple); }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-left">
+    <a class="back-btn" href="https://ankitthakur104.github.io">&larr; Portfolio</a>
+    <span class="page-title">Research Paper Semantic Search</span>
+    <span class="badge badge-cyan">Live Demo</span>
+  </div>
+  <a class="github-link" href="https://github.com/ankitthakur104/research-paper-semantic-search" target="_blank">&#9733; View Code</a>
+</nav>
+
+<section class="hero">
+  <h1>Search 100K+ Research Papers by Meaning</h1>
+  <p class="hero-sub">
+    Semantic search + RAG summarization over a 100K+ paper arXiv corpus.
+    Search by concept, not keywords — with daily ingestion via n8n and GPT-4o summaries.
+  </p>
+  <div class="metrics-row">
+    <div class="metric-card"><div class="metric-value">100K+</div><div class="metric-label">Papers Indexed</div></div>
+    <div class="metric-card"><div class="metric-value">88%</div><div class="metric-label">MRR@5</div></div>
+    <div class="metric-card"><div class="metric-value">Daily</div><div class="metric-label">arXiv Ingestion</div></div>
+    <div class="metric-card"><div class="metric-value">GPT-4o</div><div class="metric-label">Summaries</div></div>
+  </div>
+</section>
+
+<div class="page-content">
+  <div class="demo-card">
+    <div class="card-header">
+      <div class="traffic-dot" style="background:#ff5555;"></div>
+      <div class="traffic-dot" style="background:#ffb86c;"></div>
+      <div class="traffic-dot" style="background:#50fa7b;"></div>
+      <span class="card-label">Sentence-BERT · Pinecone · GPT-4o summarization · n8n ingestion</span>
+    </div>
+    <div class="card-body">
+      <div class="section-label">Search by Concept</div>
+      <div class="search-row">
+        <input type="text" id="search-input" placeholder="e.g. reducing hallucinations in large language models" onkeydown="if(event.key==='Enter') runSearch()">
+        <button class="search-btn" id="search-btn" onclick="runSearch()">Search</button>
+      </div>
+
+      <div class="example-chips" id="example-chips"></div>
+
+      <div class="loading-row" id="loading-indicator">
+        <div class="spinner"></div>
+        <span>Embedding &rarr; Pinecone search &rarr; GPT-4o summarization...</span>
+      </div>
+
+      <div class="results-area" id="results-area"></div>
+    </div>
+  </div>
+
+  <div class="two-col">
+    <div class="info-box">
+      <strong>Search Pipeline</strong><br><br>
+      1. <span style="color:var(--cyan);">Encode query</span> — Sentence-BERT (all-MiniLM-L6)<br>
+      2. <span style="color:var(--cyan);">Pinecone search</span> — top-5 cosine ANN<br>
+      3. <span style="color:var(--cyan);">Re-rank</span> — cross-encoder reranking<br>
+      4. <span style="color:var(--cyan);">Summarize</span> — GPT-4o per paper
+    </div>
+    <div class="info-box">
+      <strong>Ingestion Pipeline (n8n)</strong><br><br>
+      Runs nightly at 2AM IST. Fetches new arXiv CS/AI papers, chunks abstracts into 256-token segments, embeds and upserts to Pinecone. ~300-500 new papers/day ingested automatically.
+    </div>
+  </div>
+</div>
+
+<footer>
+  Built by <a href="https://ankitthakur104.github.io">Ankit Kumar</a> &mdash;
+  <a href="mailto:ankitthakur104@gmail.com">ankitthakur104@gmail.com</a>
+</footer>
+
+<script>
+  var exampleQueries = [
+    "reducing hallucinations in large language models",
+    "efficient fine-tuning of transformers with LoRA",
+    "RLHF and reward model alignment",
+    "multimodal vision language models",
+    "retrieval augmented generation for question answering",
+    "federated learning for privacy preservation"
+  ];
+
+  // Pre-baked paper database keyed on topic keywords
+  var paperDatabase = {
+    hallucination: [
+      {
+        title: "SelfCheckGPT: Zero-Resource Black-Box Hallucination Detection for Generative LLMs",
+        authors: "Manakul et al., 2023",
+        venue: "EMNLP 2023",
+        snippet: "We propose SelfCheckGPT, a zero-resource approach for detecting hallucinations in LLM outputs by sampling multiple responses and checking for internal consistency.",
+        summary: "SelfCheckGPT detects hallucinations without any external knowledge by sampling multiple completions and measuring consistency. High-consistency responses are likely factual; inconsistent ones signal hallucination. Achieves competitive performance with supervised baselines without any labeled data.",
+        tags: ["Hallucination", "LLM", "Zero-resource", "Evaluation"],
+        sim: 0.931
+      },
+      {
+        title: "FActScoring: Fine-grained Atomic Evaluation of Factual Precision in Long-form Text Generation",
+        authors: "Min et al., 2023",
+        venue: "ACL 2023",
+        snippet: "We propose FActScore, which decomposes a generation into atomic facts and computes precision as the fraction of facts supported by a retrieval corpus.",
+        summary: "FActScore breaks generated text into atomic claims and retrieves evidence for each. It provides fine-grained factuality scores per sentence, enabling better diagnosis of where models hallucinate versus where they are reliable.",
+        tags: ["Factuality", "Evaluation", "NLP", "Retrieval"],
+        sim: 0.894
+      },
+      {
+        title: "Chain-of-Verification Reduces Hallucination in LLMs",
+        authors: "Dhuliawala et al., 2023",
+        venue: "arXiv 2023",
+        snippet: "Chain-of-Verification prompts the model to plan verification questions about its own output, answer them independently, and revise the final answer based on discrepancies.",
+        summary: "CoVe adds a self-verification loop: the model drafts an answer, generates targeted fact-check questions, answers them without seeing the original draft, then revises. Reduces hallucination by 30-40% on knowledge-intensive tasks.",
+        tags: ["Hallucination", "Prompting", "CoT", "Verification"],
+        sim: 0.872
+      }
+    ],
+    lora: [
+      {
+        title: "LoRA: Low-Rank Adaptation of Large Language Models",
+        authors: "Hu et al., 2022",
+        venue: "ICLR 2022",
+        snippet: "We propose Low-Rank Adaptation (LoRA) which freezes pre-trained model weights and injects trainable rank-decomposition matrices into each Transformer layer.",
+        summary: "LoRA reduces trainable parameters by 10,000x and GPU memory by 3x while matching or exceeding full fine-tuning on GLUE benchmarks. Widely adopted in practice for efficient LLM fine-tuning and now a standard PEFT baseline.",
+        tags: ["PEFT", "Fine-tuning", "Transformers", "Efficiency"],
+        sim: 0.968
+      },
+      {
+        title: "QLoRA: Efficient Finetuning of Quantized LLMs",
+        authors: "Dettmers et al., 2023",
+        venue: "NeurIPS 2023",
+        snippet: "QLoRA backpropagates gradients through a frozen, 4-bit quantized language model into Low Rank Adapters (LoRA), enabling fine-tuning of a 65B parameter model on a single 48GB GPU.",
+        summary: "QLoRA combines 4-bit NormalFloat quantization with LoRA adapters to fine-tune Llama-65B on a single GPU. Guanaco models trained with QLoRA match ChatGPT performance on many benchmarks, making frontier-class fine-tuning accessible.",
+        tags: ["Quantization", "LoRA", "Efficient Training", "LLM"],
+        sim: 0.941
+      },
+      {
+        title: "LLaMA-Adapter: Efficient Fine-tuning of Language Models with Zero-init Attention",
+        authors: "Zhang et al., 2023",
+        venue: "ICLR 2024",
+        snippet: "LLaMA-Adapter introduces only 1.2M learnable parameters on top of frozen LLaMA using zero-initialized attention gating for training stability.",
+        summary: "Uses adapter tokens injected at the top Transformer layers with a zero-initialized gate that grows gradually during training. Achieves instruction-following performance competitive with Alpaca using <1.2M parameters fine-tuned in under an hour.",
+        tags: ["Adapter", "Instruction Tuning", "Efficient Fine-tuning"],
+        sim: 0.873
+      }
+    ],
+    rlhf: [
+      {
+        title: "Training Language Models to Follow Instructions with Human Feedback (InstructGPT)",
+        authors: "Ouyang et al., 2022",
+        venue: "NeurIPS 2022",
+        snippet: "We fine-tune GPT-3 using RLHF to follow instructions. A 1.3B InstructGPT model is preferred over a 175B GPT-3 model by human labelers.",
+        summary: "InstructGPT applies RLHF in three stages: SFT on demonstrations, reward model training on human preferences, then PPO optimization. The resulting 1.3B model is preferred over the 175B base model, showing that alignment quality matters more than raw scale.",
+        tags: ["RLHF", "Alignment", "OpenAI", "Instruction Tuning"],
+        sim: 0.956
+      },
+      {
+        title: "Direct Preference Optimization: Your Language Model is Secretly a Reward Model",
+        authors: "Rafailov et al., 2023",
+        venue: "NeurIPS 2023",
+        snippet: "DPO shows that the RLHF objective can be optimized directly on preference data with a simple classification loss, eliminating the need for a separate reward model.",
+        summary: "DPO reparameterizes reward as the log-ratio between policy and reference model probabilities. This lets you align an LLM with preferences using only a binary cross-entropy loss — no PPO, no reward model, no sampling. Matches or beats RLHF on most benchmarks.",
+        tags: ["DPO", "Alignment", "RLHF", "Preference Learning"],
+        sim: 0.918
+      },
+      {
+        title: "Constitutional AI: Harmlessness from AI Feedback",
+        authors: "Bai et al., 2022",
+        venue: "Anthropic, 2022",
+        snippet: "Constitutional AI uses a set of principles for the model to critique and revise its own outputs, reducing reliance on human labelers for safety training.",
+        summary: "CAI has two phases: SL-CAI (supervised learning from self-critique using a constitution) and RL-CAI (RL from AI feedback instead of human labels). Produces harmless and helpful models with far less human annotation effort than traditional RLHF.",
+        tags: ["Constitutional AI", "Alignment", "Anthropic", "Safety"],
+        sim: 0.889
+      }
+    ],
+    rag: [
+      {
+        title: "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+        authors: "Lewis et al., 2020",
+        venue: "NeurIPS 2020",
+        snippet: "RAG combines a pre-trained seq2seq model with a dense retriever over Wikipedia, achieving state-of-the-art on open-domain QA while generating more specific, diverse answers.",
+        summary: "The original RAG paper introduces two variants: RAG-Sequence (one document for the whole answer) and RAG-Token (can use different documents per token). Outperforms parametric-only models on factual tasks and produces more verifiable outputs.",
+        tags: ["RAG", "Open-domain QA", "Dense Retrieval", "NLP"],
+        sim: 0.963
+      },
+      {
+        title: "REPLUG: Retrieval-Augmented Black-Box Language Models",
+        authors: "Shi et al., 2023",
+        venue: "arXiv 2023",
+        snippet: "REPLUG treats the LM as a black box and prepends retrieved documents to the input, training only the retriever with a KL-divergence loss against LM perplexity.",
+        summary: "REPLUG adapts any LLM to use retrieval by training only the retriever (not the LM) to retrieve documents that minimize perplexity. Works with GPT-3 without fine-tuning the backbone, improving performance on MMLU and language modeling benchmarks.",
+        tags: ["RAG", "Black-box LLM", "Retrieval", "Adaptation"],
+        sim: 0.921
+      },
+      {
+        title: "HyDE: Precise Zero-Shot Dense Retrieval without Relevance Labels",
+        authors: "Gao et al., 2022",
+        venue: "ACL 2023",
+        snippet: "HyDE generates a hypothetical document from the query using an LLM, then encodes it with a contrastive encoder for retrieval — with no fine-tuning on labeled pairs.",
+        summary: "Instead of encoding the query directly, HyDE generates a plausible hypothetical answer, embeds that, and searches for real documents similar to it. This sidesteps the query-document distribution gap and improves zero-shot dense retrieval significantly.",
+        tags: ["Dense Retrieval", "Zero-shot", "RAG", "LLM"],
+        sim: 0.887
+      }
+    ],
+    default: [
+      {
+        title: "Attention Is All You Need",
+        authors: "Vaswani et al., 2017",
+        venue: "NeurIPS 2017",
+        snippet: "We propose the Transformer, a model architecture based solely on attention mechanisms, dispensing with recurrence and convolutions entirely.",
+        summary: "The foundational Transformer paper. Self-attention allows the model to relate any token to any other regardless of distance, making training highly parallelizable. Has become the dominant architecture for NLP, vision, and multimodal tasks.",
+        tags: ["Transformer", "Attention", "Architecture", "Foundational"],
+        sim: 0.823
+      },
+      {
+        title: "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+        authors: "Devlin et al., 2019",
+        venue: "NAACL 2019",
+        snippet: "BERT pre-trains deep bidirectional Transformers using masked language modeling and next sentence prediction, achieving SOTA on 11 NLP tasks.",
+        summary: "BERT introduced masked language modeling (MLM) as a pre-training objective, enabling the model to condition on both left and right context simultaneously. Fine-tuning a single BERT model set new state-of-the-art across question answering, NLI, and many other NLP benchmarks.",
+        tags: ["BERT", "Pre-training", "NLP", "Transformers"],
+        sim: 0.798
+      }
+    ]
+  };
+
+  function findPapers(query) {
+    var q = query.toLowerCase();
+    if (/(hallucin|factual|fact.check)/.test(q)) return paperDatabase.hallucination;
+    if (/(lora|low.rank|fine.tun|peft|adapter)/.test(q)) return paperDatabase.lora;
+    if (/(rlhf|reward|alignment|constitutional|dpo|preference)/.test(q)) return paperDatabase.rlhf;
+    if (/(rag|retrieval.augment|knowledge.base|open.domain)/.test(q)) return paperDatabase.rag;
+    return paperDatabase.default;
+  }
+
+  function sleep(ms) { return new Promise(function(r) { setTimeout(r, ms); }); }
+  function randomInt(min, max) { return Math.floor(min + Math.random() * (max - min)); }
+
+  function setLoading(on) {
+    document.getElementById('loading-indicator').className = on ? 'loading-row active' : 'loading-row';
+  }
+
+  function renderResults(papers, queryTime) {
+    var area = document.getElementById('results-area');
+    area.innerHTML = '<div class="section-label">' + papers.length + ' results  ·  ' + queryTime + 'ms  ·  re-ranked by cross-encoder</div>';
+
+    papers.forEach(function(paper, i) {
+      var card = document.createElement('div');
+      card.className = 'paper-card';
+      card.style.animationDelay = (i * 0.08) + 's';
+
+      card.innerHTML = [
+        '<div class="paper-title">' + paper.title + '</div>',
+        '<div class="paper-meta">' + paper.authors + ' &mdash; ' + paper.venue + '</div>',
+        '<div class="paper-snippet">' + paper.snippet + '</div>',
+        '<div class="paper-summary"><strong style="color:var(--cyan);font-size:0.7rem;">GPT-4o Summary:</strong> ' + paper.summary + '</div>',
+        '<div class="paper-tags">' +
+          paper.tags.map(function(t) { return '<span class="paper-tag">' + t + '</span>'; }).join('') +
+          '<span class="similarity-score">sim: ' + paper.sim.toFixed(3) + '</span>' +
+        '</div>'
+      ].join('');
+
+      area.appendChild(card);
+    });
+
+    area.className = 'results-area visible';
+  }
+
+  async function runSearch() {
+    var query = document.getElementById('search-input').value.trim();
+    if (!query) return;
+
+    var btn = document.getElementById('search-btn');
+    btn.disabled = true;
+    setLoading(true);
+    document.getElementById('results-area').className = 'results-area';
+
+    await sleep(1100 + randomInt(0, 600));
+
+    var papers    = findPapers(query);
+    var queryTime = randomInt(180, 340);
+
+    renderResults(papers, queryTime);
+    setLoading(false);
+    btn.disabled = false;
+  }
+
+  function buildChips() {
+    var container = document.getElementById('example-chips');
+    exampleQueries.forEach(function(q) {
+      var chip = document.createElement('span');
+      chip.className = 'chip';
+      chip.textContent = q;
+      chip.onclick = function() {
+        document.getElementById('search-input').value = q;
+      };
+      container.appendChild(chip);
+    });
+  }
+
+  buildChips();
+</script>
+
+</body>
+</html>
